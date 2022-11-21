@@ -1,0 +1,20 @@
+package com.example.ProjetoEditoraMaven.Teste;
+
+import com.example.ProjetoEditoraMaven.Entity.NotaFiscal;
+
+public class NotaFiscalTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		NotaFiscal nf = new NotaFiscal();
+		nf.setCodNF(204732);
+		nf.setValorUnitNF(55.90);
+		nf.setValorTotalNF(230.90);
+		nf.setDataEmissao("22-nov-2021");
+		nf.emitirNotaFiscal();
+		System.out.println(nf.getCodNF() + "\n" + nf.getValorUnitNF() + "\n" + nf.getValorTotalNF() + "\n" + nf.getDataEmissao() + "\n" + nf.emitirNotaFiscal());
+	
+	}
+
+}

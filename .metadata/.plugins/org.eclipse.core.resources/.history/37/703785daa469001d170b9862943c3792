@@ -1,0 +1,18 @@
+package com.example.ProjetoEditoraMaven.Teste;
+
+import com.example.ProjetoEditoraMaven.Entity.Fornecedor;
+
+public class FornecedorTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Fornecedor fornecedor = new Fornecedor();
+		fornecedor.setCnpjFornecedor("10238243748938");
+		fornecedor.setLocalFornecedor("Avenida Josefina de Almeida, número 702, Jardim Menezes, São Paulo");
+		fornecedor.setRzSocialFornecedor("Fornecedora Dois Irmãos");
+		fornecedor.setCnpjEditora("10398547569684");
+		System.out.println(fornecedor.getCnpjFornecedor() + "\n" + fornecedor.getLocalFornecedor() + "\n" + fornecedor.getRzSocialFornecedor() + "\n" + fornecedor.getCnpjEditora());
+	}
+
+}

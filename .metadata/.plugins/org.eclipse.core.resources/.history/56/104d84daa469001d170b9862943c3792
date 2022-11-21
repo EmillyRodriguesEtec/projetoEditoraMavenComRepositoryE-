@@ -1,0 +1,18 @@
+package com.example.ProjetoEditoraMaven.Teste;
+
+import com.example.ProjetoEditoraMaven.Entity.Autor;
+
+public class AutorTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Autor autor = new Autor();
+		autor.setNomeAutor("Anne");
+		autor.setCnttAutor("11992853957");
+		autor.setCpfAutor("67839475080");
+	//	autor.setCodLivro();
+		System.out.println(autor.getNomeAutor() + "\n" + autor.getCnttAutor() + "\n" + autor.getCpfAutor());
+	}
+
+}

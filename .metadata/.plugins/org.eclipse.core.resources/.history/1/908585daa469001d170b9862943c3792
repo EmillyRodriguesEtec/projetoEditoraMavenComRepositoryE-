@@ -1,0 +1,19 @@
+package com.example.ProjetoEditoraMaven.Teste;
+
+import com.example.ProjetoEditoraMaven.Entity.TipoLivro;
+import com.example.ProjetoEditoraMaven.Enums.TipoLivroEnum;
+
+public class TipoLivroTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		TipoLivro tipoLivro = new TipoLivro();
+		tipoLivro.setPrecoUnitTipoLivro(59.90);
+		tipoLivro.setNmrTipoLivro(453414);
+		tipoLivro.setTipoLivro(TipoLivroEnum.IMPRESSO);
+		System.out.println(tipoLivro.getPrecoUnitTipoLivro() + "\n" + tipoLivro.getNmrTipoLivro() + "\n" + tipoLivro.getTipoLivro());
+	
+	}
+
+}

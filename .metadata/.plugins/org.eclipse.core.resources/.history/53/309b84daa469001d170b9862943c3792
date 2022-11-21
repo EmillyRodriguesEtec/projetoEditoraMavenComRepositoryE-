@@ -1,0 +1,18 @@
+package com.example.ProjetoEditoraMaven.Teste;
+
+import com.example.ProjetoEditoraMaven.Entity.Revisor;
+
+public class RevisorTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Revisor revisor = new Revisor();
+		revisor.setNomeRevisor("Juliana");
+		revisor.setCnttRevisor("11992478564");
+		revisor.setCpfRevisor("20744805424");
+		System.out.println(revisor.getNomeRevisor() + "\n" + revisor.getCnttRevisor() + "\n" + revisor.getCpfRevisor());
+	
+	}
+
+}

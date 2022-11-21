@@ -1,0 +1,13 @@
+package com.example.ProjetoEditoraMaven;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ProjetoEditoraMavenApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProjetoEditoraMavenApplication.class, args);
+	}
+
+}
