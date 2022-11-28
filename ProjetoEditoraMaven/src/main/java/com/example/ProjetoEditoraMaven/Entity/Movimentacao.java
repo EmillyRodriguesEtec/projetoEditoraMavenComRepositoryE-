@@ -12,6 +12,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
+
 import com.example.ProjetoEditoraMaven.Enums.FormaPagamentoEnum;
 
 import lombok.Getter;
@@ -37,6 +39,7 @@ public class Movimentacao {
 	
 	@JoinColumn(name = "cnpj_edit")
 	@ManyToOne
+	@Type(type = "char")
 	private Editora cnpjEditora;
 	
 	@JoinColumn(name = "cod_nf")

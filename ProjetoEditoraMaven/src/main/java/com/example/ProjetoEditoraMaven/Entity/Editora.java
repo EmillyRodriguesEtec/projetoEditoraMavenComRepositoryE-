@@ -32,6 +32,7 @@ public class Editora {
 	private String ieEditora;
 	
 	@Id
+	@Type(type = "char")
 	@Column(name = "cnpj_edit")
 	private String cnpjEditora;
 	

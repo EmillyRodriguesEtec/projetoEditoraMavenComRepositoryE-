@@ -8,6 +8,8 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,6 +21,7 @@ public class Fornecedor {
 
 	@Id
 	@Column(name = "cnpj_forn")
+	@Type(type = "char")
 	private String cnpjFornecedor;
 	
 	@Column(name= "local_forn")
@@ -29,6 +32,7 @@ public class Fornecedor {
 	
 	@JoinColumn(name = "cnpj_edit")
 	@ManyToOne
+	@Type(type = "char")
 	private Editora cnpjEditora;
 	
 	public void fornecerMateriais() {
